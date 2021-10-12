@@ -1,2 +1,2 @@
-# python-skel
-template for python assignments with pytest folders
+# Example Code
+As we work through examples in class, this repo will serve as reference. 
