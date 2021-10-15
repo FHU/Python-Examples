@@ -13,3 +13,17 @@ def func_with_param(param1, param2):
 
 # function call with hardcoded values passed as arguments
 new_string = func_with_param('Steve', 'Cheetoes')
+
+# function definition with type hints. This function takes 3 strings and returns an integer
+def vol_of_box(height:str, width:str, length:str) -> int:
+    value = int(height) * int(width) * int(length)
+    return value
+
+# function call for vol_of_box
+def use_vol_of_box():
+    h = input()
+    w = input()
+    l = input()
+    volume = vol_of_box(h,w,l)
+    assert isinstance(volume, int)
+    print(volume)
