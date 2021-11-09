@@ -45,3 +45,24 @@ word = 'supercalifragilisticexpialidocious'
 
 for letter in word:
     print(letter)
+
+# Ugly solution (but it works) to printing out lines backwards
+user_input = input()
+while user_input != 'done':
+    print_me = ''
+    for index in range(len(user_input)-1, -1, -1):
+        print_me = print_me + user_input[index]
+    print(print_me)
+    user_input = input()
+
+# Enumerate example
+average_process_time_sec = 42
+ticket_office_queue = ['Bob', 'Alice', 'Charlie', 'Doug', 'Evan', 'Favio', 'Gavin', 'Hayden', ]
+for index, name in enumerate(ticket_office_queue):
+    print(f'{name} is in {index} in line. Wait time: {average_process_time_sec * index}')
+
+# dict.items() example
+ticket_office_queue = {1: 'Bob', 2: 'Alice', 3:'Charlie'}
+for key, value in ticket_office_queue.items():
+    print(key, ticket_office_queue[key])
+    print(key, value)
