@@ -1,4 +1,5 @@
 import random
+import matplotlib.pyplot as plt
 
 # We are going to use a dictionary to keep our counts in this example 
 roll_counts = {2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0, 10:0, 11:0, 12:0}
@@ -20,3 +21,6 @@ if num_rolls >= 1:
         print(f'{roll}s {hist}')
 else:
     print('Invalid number of rolls. Try again.')
+
+plt.bar(roll_counts.keys(), roll_counts.values())
+plt.show()
