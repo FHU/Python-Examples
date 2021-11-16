@@ -1,4 +1,4 @@
-'''Example for printint dictionaries one line at a time'''
+'''Example for printing dictionaries one line at a time'''
 
 def print_dog_boarding(dogs: dict):
     'print all the dogs in their kennels'
