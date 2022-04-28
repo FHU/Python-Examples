@@ -5,8 +5,8 @@ total_word_count = 0
 one_big_list_o_words = []
 with open("bible.txt") as bible:
     for line in bible:
-        one_big_list_o_words.extend(re.sub(r'[.,:;?!()]','', line).lower().split())
-        for word in re.sub(r'[.,:;?!()]','', line).lower().split():
+        one_big_list_o_words.extend(re.sub(r'[.,:;?!()"\-]','', line).lower().split())
+        for word in re.sub(r'[.,:;?!()"\-]','', line).lower().split():
             total_word_count += 1
             if word in word_counts:
                 word_counts[word] += 1
